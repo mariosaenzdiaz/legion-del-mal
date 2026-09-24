@@ -1,0 +1,14 @@
+name: Reclutamiento de Agente
+
+on: push
+
+jobs: 
+  reporte-de-reclutamiento: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: El agente se presenta
+        run: echo "Soy Lex Luthor, y el líder de la Legión del Mal"
+          # python generar_reporte.py
