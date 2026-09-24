@@ -26,17 +26,9 @@ jobs:
 
       - name: Capacidades del agente
         run: |
-          echo "Capacidades del agente"
-          echo "Capacidades detectivas"
-          echo "Sistema Operativo"
-          uname -a
-          echo "Habilidades tecnicas"
-          node --version
-          git --version
-          python3 --version
-      
-      - name: Reconnocimiento del terreno
-        run: |
-          echo "Reconnocimiento del terreno"
-          ls /
-          
+          echo "Agente ${{ github.actor }} llega a la fortaleza"
+          echo ""
+          echo "Buscar los archivos de la Legión"
+          ls -ls
+          echo ""
+          echo "X pero que paso? o hay nada"
